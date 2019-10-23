@@ -335,10 +335,6 @@ About Katherine: A Graduate Student who philosophizes and photographs.</p>
 
 </div>
 </div>
-</div>
-
-
-</div>
 
 <br><br>
 
@@ -348,24 +344,6 @@ All Rights Reserved.
 </div>
 </div>
 </footer>
-
-
-<script>
-require({
-paths: {
-moment: "https://nbviewer.jupyter.org/static/components/moment/min/moment.min.js?v=89f87298ad94aa1e6b92f42eb66da043"
-}
-}, ["moment"], function(moment){
-var date = $("footer .date"),
-m = moment(new Date(date.data('date'))),
-update = function(){ date.text(m.fromNow()); };
-setInterval(update, 61*1000);
-update();
-var w = $(window).scroll(function(event){
-$("body").toggleClass("scrolled", w.scrollTop() > 0);
-      });
-    });
-  </script>
 
   <!--NEW RELIC Stop Perf Measurement-->
 
